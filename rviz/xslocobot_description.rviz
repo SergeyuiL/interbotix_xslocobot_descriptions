@@ -8,6 +8,9 @@ Panels:
         - /Status1
         - /Map1
         - /Camera1
+        - /Move Base1
+        - /Move Base1/Global Plan1
+        - /Move Base1/Local Plan1
         - /DepthCloud1/Auto Size1
       Splitter Ratio: 0.5638889074325562
     Tree Height: 719
@@ -580,7 +583,7 @@ Visualization Manager:
           Radius: 0.029999999329447746
           Shaft Diameter: 0.10000000149011612
           Shaft Length: 0.10000000149011612
-          Topic: /locobot/move_base/NavfnROS/plan
+          Topic: /locobot/move_base/TebLocalPlannerROS/global_plan
           Unreliable: false
           Value: true
         - Alpha: 1
@@ -604,7 +607,7 @@ Visualization Manager:
           Radius: 0.029999999329447746
           Shaft Diameter: 0.10000000149011612
           Shaft Length: 0.10000000149011612
-          Topic: /locobot/move_base/TrajectoryPlannerROS/local_plan
+          Topic: /locobot/move_base/TebLocalPlannerROS/local_plan
           Unreliable: false
           Value: true
       Enabled: true
@@ -673,7 +676,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 17.206329345703125
+      Distance: 11.725631713867188
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -681,9 +684,9 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 2.2708306312561035
-        Y: -0.258330374956131
-        Z: -1.5552303791046143
+        X: -0.6827471852302551
+        Y: -2.807114601135254
+        Z: -2.901616334915161
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
